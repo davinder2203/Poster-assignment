@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+
+body > main{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/*adding poster image to the div background*/
+body > main > div{
+    display: flex;
+    background-image: url('./images/Conjuring2\ Original\ Poster_cleanup.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 750px;
+    height: 900px;
+}
+
+/*position upper poster text*/
+body > main > div:nth-child(1) > div:nth-child(1){
+    margin-left: 350px;
+    display: flex;
+    min-width: 550px;
+    height: 100px;
+    /*using transform to place the text at the right location*/
+    transform: translate(200px,0px);
+}
+
+body > main > div:nth-child(1) > div:nth-child(1) > p{
+    font-size:small;
+    
+    color: white;
+    
+    font-family:  serif;
+    
+}
+
+body > main > div:nth-child(1) > div:nth-child(1) > p > button{
+    font-style: none;
+    color: white;
+    font-size: large;
+    font-style: bold;
+    border: none;
+    background-color: transparent;
+    font-family: 'EB Garamond', serif;
+}
+
+
+
+/* for THE */
+body > main > div:nth-child(1) > div:nth-child(2) > p:nth-child(1){
+    position: relative;
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    color: rgba(187,196,201,255);
+    transform: translate(-205px, 575px);
+}
+
+/* for CONJURING */
+body > main > div:nth-child(1) > div:nth-child(2) > p:nth-child(2){
+    position: relative;
+    font-size: 60px;
+    font-family: 'EB Garamond', serif;
+    color: rgba(187,196,201,255);
+    transform: translate(-225px, 480px);
+    /*sending 2 in the background of CONJURING*/
+    z-index: 100;
+    filter: drop-shadow(0.85em 0.85em 0.85em black);
+}
+
+/* for 2 */
+body > main > div:nth-child(1) > div:nth-child(2) > p:nth-child(3){
+    position: relative;
+    font-size: 160px;
+    font-family: 'EB Garamond', serif;
+    color: rgba(110,118,126,255);
+    transform: translate(-85px, 168px);
+    z-index: 10;
+}
+
+/* for The Director..*/
+
+body > main > div:nth-child(1) > div:nth-child(2) > p:nth-child(4){
+    position: relative;
+    font-family: 'EB Garamond', serif;
+    color:beige;
+    width: 800px;
+    transform: translate(-250px,-28px);
+    color: rgba(187,196,201,255);
+}
+
+body > main > div:nth-child(1) > div:nth-child(2) > p:nth-child(5){
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: rgba(157, 162, 164, 0.695);
+    font-size: 10px;
+    text-align: center;
+    width: 700px;
+    transform: translate(-400px, -30px);
+    color: rgba(187,196,201,255);
+}
+
+#footer1{
+    display: flex;
+    transform: translate(-430px, -70px);
+    align-items: center;
+    justify-content: center;
+    color: rgba(187,196,201,255);
+    max-width: 780px;
+}
+
+.footer{
+    
+    padding: 10px;
+    font-size: 9px;
+    color: rgba(187,196,201,255);
+    
+}
+
+#releaseDate{
+    display: flex;
+    flex-grow: 1;
+    font-size: 32px;
+    width: 260px;
+
+}
+
+a{
+    color: rgba(187,196,201,255);
+    text-decoration: none;
+}
