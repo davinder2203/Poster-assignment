@@ -11,7 +11,7 @@ body > main{
 /*adding poster image to the div background*/
 body > main > div{
     display: flex;
-    background-image: url('./images/Conjuring2\ Original\ Poster_cleanup.jpg');
+    background-image: url('Poster_cleanup.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     justify-content: center;
